@@ -4,7 +4,8 @@
 }
 .container{
     margin: 0 auto;
-    max-width: 1170px;
+    max-width: 1290px;
+    padding: 0 15px;
 }
 body{
     display: grid;
@@ -31,13 +32,13 @@ header{
     text-transform: uppercase;
     font-family: monospace;
     font-size: 20px;
-    margin-right: 40px;
+    margin-right: 80px;
 }
 #header input{
     height:40px;
     border-radius: 30px;
     border: 0;
-    background:gray;
+    background:#7f7770;
 }
 main{
     grid-area: main;
@@ -45,6 +46,12 @@ main{
 }
 footer{
     grid-area: footer;
-    background: black;
+    background: #7f7770;
 }
-
+#footer{
+    height: 700px;
+    display: grid;
+    grid-template-columns: 2fr repeat(3,1fr);
+    grid-column-gap: 30px;
+    align-items: center;
+}
